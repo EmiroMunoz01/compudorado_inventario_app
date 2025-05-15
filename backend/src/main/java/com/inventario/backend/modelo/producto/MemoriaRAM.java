@@ -1,28 +1,28 @@
 package com.inventario.backend.modelo.producto;
 
-import com.inventario.backend.modelo.producto.enums.Socket;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
 
-
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "entidad_procesador")
+@Table(name = "entidad_memoria_ram")
 
-public class Procesador extends Producto{
-
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "socket", nullable = false)
-    private Socket socket;
+public class MemoriaRAM extends Producto{
 
 
+
+    @CreationTimestamp
+    @Column(updatable = false)
+    private LocalDateTime fechaCreacion;
 
 }

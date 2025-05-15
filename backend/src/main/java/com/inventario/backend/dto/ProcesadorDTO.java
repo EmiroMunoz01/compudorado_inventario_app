@@ -1,6 +1,6 @@
 package com.inventario.backend.dto;
 
-import com.inventario.backend.modelo.producto.e_socket;
+import com.inventario.backend.modelo.producto.enums.Socket;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -42,7 +42,7 @@ public class ProcesadorDTO {
 
     private Long precioTotal;
 
-    private e_socket socket;
+    private Socket socket;
 
     private LocalDateTime fechaCreacion;
 
