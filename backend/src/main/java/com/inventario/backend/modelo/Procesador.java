@@ -48,6 +48,8 @@ public class Procesador {
         this.precioTotal = this.precioUnitario * this.cantidad;
     }
 
+
+
     @CreationTimestamp
     @Column(updatable = false)
     private LocalDateTime fechaCreacion;

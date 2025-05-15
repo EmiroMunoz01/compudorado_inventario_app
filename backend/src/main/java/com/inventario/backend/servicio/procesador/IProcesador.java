@@ -11,10 +11,14 @@ public interface IProcesador {
 
     public ProcesadorDTO crearProcesador(ProcesadorDTO procesadorDTO);
 
-    public ProcesadorDTO buscarProcesadorPorNombre(String nombreProcesador);
+    List<ProcesadorDTO> buscarProcesadorPorNombre(String nombreProcesador);
 
-    public ProcesadorDTO actualizarProcesador(Long idProcesador, ProcesadorDTO procesadorDTO);
+    List<ProcesadorDTO> buscarProcesadorPorNombreContains(String nombreProcesador);
 
-    public void eliminarProcesador(Long idProcesador);
+    public ProcesadorDTO buscarProcesadorPorSerial(String serialProcesador);
+
+    public ProcesadorDTO actualizarProcesador(String serialProcesador, ProcesadorDTO procesadorDTO);
+
+    public void eliminarProcesador(String serialProcesador);
 
 }

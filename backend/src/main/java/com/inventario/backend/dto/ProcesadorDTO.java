@@ -10,6 +10,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -38,10 +41,10 @@ public class ProcesadorDTO {
     @Min(value = 1, message = "El precio debe tener al menos 6 dígitos")
     private Long precioUnitario;
 
-
     private Long precioTotal;
 
     private e_socket socket;
 
+    private LocalDateTime fechaCreacion;
 
 }
