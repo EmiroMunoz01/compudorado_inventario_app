@@ -1,7 +1,7 @@
 package com.inventario.backend.servicio.procesador;
 
 import com.inventario.backend.dto.ProcesadorDTO;
-import com.inventario.backend.modelo.Procesador;
+import com.inventario.backend.modelo.producto.Procesador;
 import com.inventario.backend.repositorio.Repositorio_procesador;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;

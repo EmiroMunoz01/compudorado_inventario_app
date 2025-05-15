@@ -1,12 +1,10 @@
 package com.inventario.backend.repositorio;
 
-import com.inventario.backend.modelo.Memoria_Ram;
-import com.inventario.backend.modelo.Procesador;
+import com.inventario.backend.modelo.producto.MemoriaRam;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface Repositorio_memoria_ram extends JpaRepository<Memoria_Ram, Long> {
+public interface Repositorio_memoria_ram extends JpaRepository<MemoriaRam, Long> {
 }

@@ -1,6 +1,6 @@
 package com.inventario.backend.dto;
 
-import com.inventario.backend.modelo.e_socket;
+import com.inventario.backend.modelo.producto.e_socket;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -10,7 +10,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 

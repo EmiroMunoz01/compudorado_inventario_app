@@ -1,4 +1,4 @@
-package com.inventario.backend.modelo;
+package com.inventario.backend.modelo.producto;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "entidad_memoria_ram")
-public class Memoria_Ram {
+public class MemoriaRam {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

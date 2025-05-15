@@ -2,7 +2,6 @@ package com.inventario.backend.controlador;
 
 
 import com.inventario.backend.dto.ProcesadorDTO;
-import com.inventario.backend.modelo.Procesador;
 import com.inventario.backend.servicio.procesador.ServicioProcesador;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
